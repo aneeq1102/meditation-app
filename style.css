@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+    font-family: sans-serif;
+}
+
+.time-picker{
+    flex:1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.media-player{
+    flex:1;
+    
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.change-sound{
+    flex:1;
+    
+}
+
+.media-player svg{
+    position:absolute;
+    
+}
+
+.replay{
+    position:absolute;
+    bottom:30%;
+}
+
+.time-remaining{
+    position:absolute;
+    bottom:10%;
+}
+
+.change-sound{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:column;
+}
+
+
+.change-sound button{
+    border: none;
+    border-radius: 50%;
+    height:120px;
+    width:120px;
+    padding:30px;
+
+}
+
+.change-sound button:nth-child(1) {
+    background: #4972a1;
+}
+.change-sound button:nth-child(2) {
+    background: #a14f49;
+}
+
+.change-sound button img{
+    height:100%;
+    
+}
+
+.video-container{
+    z-index:-1;
+    position:fixed;
+    top:0%;
+    left:0%;
+    width:100%;
+}
+
+.time-picker button{
+    width:30%;
+    height:10%;
+    border-radius: 5%;
+    background-color: transparent;
+    border:2px solid white;
+    color:white;
+
+}
+
+.time-picker button:hover {
+    background: white;
+    color: black;
+    -webkit-transition: background-color 250ms linear;
+    
+}
+
+.play{
+    z-index:1;
+}
